@@ -3,13 +3,13 @@ import random
 from time import time
 from faker import Faker
 
-RECORD_COUNT = 500000
+RECORD_COUNT = 400000000
 fake = Faker()
 
 
 
 def create_csv_file():
-    with open('Dask-Test/files/test.csv', 'w', newline='') as csvfile:
+    with open('./files/test.csv', 'w', newline='') as csvfile:
         fieldnames = ['user_id', 'isAuthenticated', 'time']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
